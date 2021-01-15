@@ -25,10 +25,10 @@ var forecast = {
 
 
 // call for current weather
-$.ajax(currentWeather).done(function (response) {
-    console.log(response);
-    $("#currentTemp").text("Current: " + response.main.temp);
-});
+// $.ajax(currentWeather).done(function (response) {
+//     console.log(response);
+//     $("#currentTemp").text("Current: " + response.main.temp);
+// });
 
 // call for tomorrow's forecast
 // $.ajax(forecast).done(function (response) {
