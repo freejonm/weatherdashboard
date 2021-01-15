@@ -22,13 +22,19 @@ var forecast = {
 	}
 }
 
+
+
+// call for current weather
 $.ajax(currentWeather).done(function (response) {
     console.log(response);
-    $("body").append("<div>" + response.main.temp + "</div>");
+    $("body").append("<div>Current: " + response.main.temp + "</div>");
 });
 
+// call for tomorrow's forecast
 $.ajax(forecast).done(function (response) {
     console.log(response);
-    $("body").append("<div>" + response.list[0].main.temp_max + "</div>");
+    $("body").append(
+        "<div>" + response.list[1].dt_txt + "</div>" +
+        "<div>High: " + response.list[1].main.temp_max + "</div>");
 });
 
