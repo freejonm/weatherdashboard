@@ -6,6 +6,7 @@
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <!-- Header -->
@@ -17,17 +18,15 @@
 
     <!-- Search bar and current info -->
     <div class="row">
-    <!-- Search bar -->
-        <div class="col1">
+ 
+        <div class="col-md-6">
             <div class="input-group mb-3">
             <input type="text" class="form-control" id="input" placeholder="Search for a location" aria-label="Search" aria-describedby="basic-addon2">
-           
-            <button type="button">Search</button>
-           
             </div>
+            <button type="button">Search</button>
         </div>
-    <!-- Current weather info -->
-        <div class="col-md-6 offset3">
+   
+        <div class="col-md-6">
             <div id="currentTemp">
             </div>
         </div>
@@ -35,41 +34,24 @@
 
     <!-- Forecast -->
     <div class="row">
-        <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text"></p>
-            </div>
-          </div>
+        <div class="col-md-3">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
-              <p class="card-text"></p>
+                <h3 id="forecast-date"></h3>
             </div>
           </div>
+        </div>
+        <div class="col-md-3">
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
-              <p class="card-text"></p>
+                <h3 id="forecast-date"></h3>
             </div>
           </div>
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text"></p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text"></p>
-            </div>
-          </div>
-
-    </div>
+        </div>
+        
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

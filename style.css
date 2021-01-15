@@ -3,23 +3,3 @@
     color: green;
     padding: 5px;
 }
-
-.header {
-    font-size: xx-large;
-    font-style: bold;
-    background-color: green;
-    color: white;
-    padding: 40px;
-}
-
-.card {
-    width: 20%;
-    padding: 0px;
-
-}
-
-.col1{
-    background-color: blue;
-    width: 50%
-}
-
