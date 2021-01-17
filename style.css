@@ -1,5 +1,63 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    color: green;
-    padding: 5px;
-}
+body, html {
+    height: 100%;
+  }
+  
+  /* Main titlebar */
+  h1 {
+    background-color: #222222;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  /* Utility class to hide an element */
+  .hidden {
+    display: none;
+  }
+  
+  /* Sidebar with search and history */
+  #search-col {
+    background-color: #f5f5f5f5;
+  }
+  
+  /* Search button */
+  #search-btn {
+    background-color:#007bff;
+    color: white;
+  }
+  
+  #search-btn:hover {
+    color: #cce5ff;
+  }
+  
+  /* Search history */
+  .past-city {
+    background-color: #ffffff;
+    color: #555555;
+    padding: 0.5rem 2rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor:pointer;
+  }
+  
+  .past-city:hover {
+    border-color: #007bff;
+  }
+  
+  /* Current UV index */
+  #current-uvi {
+    color: white;
+    border-radius: 4px;
+    padding: 0.1rem 0.3rem;
+  }
+  
+  /* Forecast weather block */
+  .forecast {
+    background-color:#007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .fc-date {
+    margin: 0.5rem 0;
+  }
+  
